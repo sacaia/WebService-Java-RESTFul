@@ -19,7 +19,7 @@ public class Aluno implements Cloneable
         if (novoRA > 99999 || novoRA < 10000)
             throw new Exception ("RA invalido");
 
-        this.ra = novoRA;
+        this.ra = "" + novoRA;
     }
 
     public void setNome (String novoNome) throws Exception
