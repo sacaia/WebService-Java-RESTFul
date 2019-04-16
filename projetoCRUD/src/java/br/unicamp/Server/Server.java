@@ -5,6 +5,8 @@
  */
 package br.unicamp.Server;
 
+import bd.dbos.Aluno;
+import bd.daos.Alunos;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
@@ -12,6 +14,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
 
 /**
@@ -50,4 +53,26 @@ public class Server {
     @Consumes(MediaType.APPLICATION_JSON)
     public void putJson(String content) {
     }
+    
+    @GET
+    @Path("consulta/{ra}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Aluno consultaIdAluno(@PathParam("ra")String ra){
+        
+        Aluno aluno = null;
+        
+        try
+        {
+            aluno = Alunos.getAluno(ra);
+        }
+        catch(Exception e)
+        {
+           e.printStackTrace();
+        }
+        
+        
+        return aluno;
+    }
+    
 }
