@@ -71,6 +71,9 @@ public class Alunos
     {
         if (aluno==null)
             throw new Exception ("Aluno nao fornecido");
+        
+        if (cadastrado(aluno.getRA()))
+            throw new Exception ("Aluno ja cadastrado");
 
         try
         {
