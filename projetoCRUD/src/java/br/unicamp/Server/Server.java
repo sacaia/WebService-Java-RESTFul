@@ -94,7 +94,7 @@ public class Server {
     }
    
     @PUT
-    @Path("/alterar/")
+    @Path("/alterar")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public void alteraAluno(Aluno aluno){
