@@ -57,7 +57,7 @@ public class Server {
     }
     
     @GET
-    @Path("/consulta/{ra}")
+    @Path("consulta/{ra}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Aluno consultaIdAluno(@PathParam("ra")String ra){
@@ -77,24 +77,25 @@ public class Server {
     }
 
     @POST
-    @Path("/incluir")
+    @Path("incluir")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void inlcuiAluno(Aluno aluno){
+    public String inlcuiAluno(Aluno aluno){
+        
+        String ret = aluno.toString();
         try
         {
             Alunos.incluir(aluno);
+            return  ret +" O aluno foi incluido com exito";
         }
         catch(Exception e)
         {
-           e.printStackTrace();
+           return ret + "  " + e.getMessage();
         }
-        
-        //return "a";
     }
    
     @PUT
-    @Path("/alterar")
+    @Path("alterar")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public void alteraAluno(Aluno aluno){
@@ -109,10 +110,10 @@ public class Server {
     }
 
     @POST
-    @Path("/excluir/{ra}")
+    @Path("excluir/{ra}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void excluiAluno(@PathParam("ra")String ra){
+    public String excluiAluno(@PathParam("ra")String ra){
         try
         {
             Alunos.excluir(ra);
@@ -121,6 +122,8 @@ public class Server {
         {
            e.printStackTrace();
         }
+        
+        return "a";
     }
 
 }

@@ -14,14 +14,6 @@ public class Aluno implements Cloneable
         this.ra = novoRA;
     }
 
-    public void setRA (int novoRA) throws Exception
-    {
-        if (novoRA > 99999 || novoRA < 10000)
-            throw new Exception ("RA invalido");
-
-        this.ra = "" + novoRA;
-    }
-
     public void setNome (String novoNome) throws Exception
     {
         if (novoNome==null || novoNome.equals(""))
@@ -43,11 +35,6 @@ public class Aluno implements Cloneable
         return this.ra;
     }
 
-    public int getRAInt ()
-    {
-        return Integer.parseInt(this.ra);
-    }
-
     public String getNome ()
     {
         return this.nome;
@@ -57,17 +44,17 @@ public class Aluno implements Cloneable
     {
         return this.email;
     }
+    
+    public Aluno()
+    {
+        ra    = null;
+        nome  = null;
+        email = null;
+    }
 
     public Aluno (String ra, String nome, String email) throws Exception
     {
-        this.setRA     (ra);
-        this.setNome   (nome);
-        this.setEmail  (email);
-    }
-
-    public Aluno (int ra, String nome, String email) throws Exception
-    {
-        this.setRA     (ra);
+        this.setRA    (ra);
         this.setNome   (nome);
         this.setEmail  (email);
     }

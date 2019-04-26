@@ -95,7 +95,8 @@ public class Alunos
         }
         catch (SQLException erro)
         {
-            throw new Exception ("Erro ao inserir aluno");
+            //throw new Exception ("Erro ao inserir aluno");
+            throw new Exception (erro);
         }
     }
 
