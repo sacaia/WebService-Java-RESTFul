@@ -57,7 +57,23 @@ public class Server {
     }
     
     @GET
-    @Path("consulta/{ra}")
+    @Path("/excluiAluno/{ra}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public String excluiAluno(@PathParam("ra")String ra){
+        try
+        {
+            Alunos.excluir(ra);
+            return "O aluno foi excluido com exito";
+        }
+        catch(Exception e)
+        {
+           return "Nao foi possivel excluir o aluno";
+        }
+    }
+    
+    @GET
+    @Path("/consulta/{ra}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Aluno consultaIdAluno(@PathParam("ra")String ra){
@@ -81,16 +97,14 @@ public class Server {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public String inlcuiAluno(Aluno aluno){
-        
-        String ret = aluno.toString();
         try
         {
             Alunos.incluir(aluno);
-            return  ret +" O aluno foi incluido com exito";
+            return "O aluno foi incluido com exito";
         }
         catch(Exception e)
         {
-           return ret + "  " + e.getMessage();
+           return "Nao foi possivel inlcuir o aluno";
         }
     }
    
@@ -98,32 +112,16 @@ public class Server {
     @Path("alterar")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public void alteraAluno(Aluno aluno){
+    public String alteraAluno(Aluno aluno){
         try
         {
             Alunos.alterar(aluno);
+            return "O aluno foi alterado com exito";
         }
         catch(Exception e)
         {
-           e.printStackTrace();
+           return "Nao foi possivel alterar o aluno";
         }
-    }
-
-    @POST
-    @Path("excluir/{ra}")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
-    public String excluiAluno(@PathParam("ra")String ra){
-        try
-        {
-            Alunos.excluir(ra);
-        }
-        catch(Exception e)
-        {
-           e.printStackTrace();
-        }
-        
-        return "a";
     }
 
 }

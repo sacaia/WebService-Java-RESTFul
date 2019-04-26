@@ -6,12 +6,12 @@ public class Aluno implements Cloneable
     private String nome;
     private String email;
  
-    public void setRA (String novoRA) throws Exception
+    public void setRa (String novoRa) throws Exception
     {
-        if (novoRA == null || novoRA.equals(""))
+        if (novoRa == null || novoRa.equals(""))
             throw new Exception ("RA invalido");
 
-        this.ra = novoRA;
+        this.ra = novoRa;
     }
 
     public void setNome (String novoNome) throws Exception
@@ -30,7 +30,7 @@ public class Aluno implements Cloneable
         this.email = novoEmail;
     }
 
-    public String getRA ()
+    public String getRa ()
     {
         return this.ra;
     }
@@ -54,7 +54,7 @@ public class Aluno implements Cloneable
 
     public Aluno (String ra, String nome, String email) throws Exception
     {
-        this.setRA    (ra);
+        this.setRa    (ra);
         this.setNome   (nome);
         this.setEmail  (email);
     }

@@ -9,12 +9,12 @@ import bd.dbos.*;
 
 public class Alunos
 {
-    public static boolean cadastrado (int novoRA) throws Exception
+    public static boolean cadastrado (int novoRa) throws Exception
     {
-        if (novoRA > 99999 || novoRA < 10000)
+        if (novoRa > 99999 || novoRa < 10000)
             throw new Exception ("RA invalido");
 
-        String ra2 = "" + novoRA;
+        String ra2 = "" + novoRa;
 
         return cadastrado(ra2);
     }
@@ -72,7 +72,7 @@ public class Alunos
         if (aluno==null)
             throw new Exception ("Aluno nao fornecido");
         
-        if (cadastrado(aluno.getRA()))
+        if (cadastrado(aluno.getRa()))
             throw new Exception ("Aluno ja cadastrado");
 
         try
@@ -86,7 +86,7 @@ public class Alunos
 
             BDSQLServer.COMANDO.prepareStatement (sql);
 
-            BDSQLServer.COMANDO.setString (1, aluno.getRA ());
+            BDSQLServer.COMANDO.setString (1, aluno.getRa ());
             BDSQLServer.COMANDO.setString (2, aluno.getNome ());
             BDSQLServer.COMANDO.setString (3, aluno.getEmail ());
 
@@ -100,12 +100,12 @@ public class Alunos
         }
     }
 
-    public static void excluir (int novoRA) throws Exception
+    public static void excluir (int novoRa) throws Exception
     {
-        if (novoRA > 99999 || novoRA < 10000)
+        if (novoRa > 99999 || novoRa < 10000)
             throw new Exception ("RA invalido");
 
-        String ra2 = "" + novoRA;
+        String ra2 = "" + novoRa;
 
         excluir(ra2);
     }
@@ -139,7 +139,7 @@ public class Alunos
         if (aluno==null)
             throw new Exception ("Aluno nao fornecido");
 
-        if (!cadastrado (aluno.getRA()))
+        if (!cadastrado (aluno.getRa()))
             throw new Exception ("Nao cadastrado");
 
         try
@@ -155,7 +155,7 @@ public class Alunos
 
             BDSQLServer.COMANDO.setString (1, aluno.getNome ());
             BDSQLServer.COMANDO.setString (2, aluno.getEmail ());
-            BDSQLServer.COMANDO.setString (3, aluno.getRA ());
+            BDSQLServer.COMANDO.setString (3, aluno.getRa ());
 
             BDSQLServer.COMANDO.executeUpdate ();
             BDSQLServer.COMANDO.commit        ();
