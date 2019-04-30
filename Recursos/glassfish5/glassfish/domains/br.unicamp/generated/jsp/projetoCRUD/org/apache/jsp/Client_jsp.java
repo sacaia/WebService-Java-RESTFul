@@ -164,7 +164,7 @@ public final class Client_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"modal-body\">\n");
       out.write("                    <div class=\"container-fluid\">\n");
       out.write("                        \n");
-      out.write("                        <form action=\"Incluir.jsp\">\n");
+      out.write("                        <form action=\"Client.jsp\">\n");
       out.write("\n");
       out.write("                            <div class=\"form-row\">  \n");
       out.write("\n");

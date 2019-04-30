@@ -52,9 +52,9 @@ public final class Incluir_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
  
     try{
-    String ra = (String)request.getAttribute("ra");
-    String nome = (String)request.getAttribute("nome");
-    String email = (String)request.getAttribute("email");
+    String ra = (String)request.getParameter("ra");
+    String nome = (String)request.getParameter("nome");
+    String email = (String)request.getParameter("email");
     
     Aluno aluno = new Aluno(ra, nome, email);
     
