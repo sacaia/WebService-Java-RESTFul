@@ -63,7 +63,7 @@ public final class Client_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    \n");
       out.write("    <div class=\"row\">\n");
       out.write("        <div class=\"col-12\">\n");
-      out.write("            <table class=\"table\">\n");
+      out.write("            <table class=\"table\" style=\"max-height: 100px; height: 100px; overflow-y:scroll;\">\n");
       out.write("                <thead class=\"thead-dark\">\n");
       out.write("                <tr>\n");
       out.write("                    <th scope=\"col\">#</th>\n");
@@ -134,15 +134,56 @@ public final class Client_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <div class=\"container pl-5\">\n");
       out.write("                <button class=\"btn btn-dark btn-lg mb-3 mt-2\" data-toggle=\"modal\" data-target=\"#modal-inserir\">Inserir Aluno</button>\n");
       out.write("                <br>\n");
-      out.write("                <button class=\"btn btn-dark btn-lg mb-3\">Alterar Aluno</button>\n");
+      out.write("                <button class=\"btn btn-dark btn-lg mb-3\" data-toggle=\"modal\" data-target=\"#modal-alterar\">Alterar Aluno</button>\n");
       out.write("                <br>\n");
-      out.write("                <button class=\"btn btn-dark btn-lg mb-3\">Excluir Aluno</button>\n");
+      out.write("                <button class=\"btn btn-dark btn-lg mb-3\" data-toggle=\"modal\" data-target=\"#modal-excluir\">Excluir Aluno</button>\n");
       out.write("            </div>\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
-      out.write("                \n");
+      out.write("         \n");
+
+    String resposta = null;
+    resposta = (String)request.getAttribute("ret");
+    if(resposta != null)
+    {
+        if(resposta.equals("incluirTrue") || resposta == "incluirTrue")
+        {
+
+      out.write("\n");
+      out.write("    <h2>Aluno incluido com sucesso!</h2>\n");
+  
+        }
+        else
+            if(resposta.equals("excluirTrue") || resposta == "excluirTrue")
+            {
+
+      out.write("\n");
+      out.write("                <h2>Aluno excluido com sucesso!</h2>\n");
+  
+            }
+            if(resposta.equals("alterarTrue") || resposta == "alterarTrue")
+            {
+
+      out.write("\n");
+      out.write("                <h2>Aluno alterado com sucesso!</h2>\n");
+  
+            }
+                else
+                {
+    
+      out.write("\n");
+      out.write("                    <h2>");
+      out.print( resposta );
+      out.write("</h2>\n");
       out.write("    ");
-      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "Incluir.jsp", out, false);
+       
+                }
+        //request.removeAttribute("include");
+        //RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
+        //dispatcher.forward( request, response);
+    }
+            
+
       out.write("\n");
       out.write("    \n");
       out.write("<!---------------------------------MODAL-INSERIR--------------------------------->\n");
@@ -164,19 +205,19 @@ public final class Client_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                <div class=\"modal-body\">\n");
       out.write("                    <div class=\"container-fluid\">\n");
       out.write("                        \n");
-      out.write("                        <form action=\"Client.jsp\">\n");
+      out.write("                        <form method=\"get\" action=\"INCLUIR\">\n");
       out.write("\n");
       out.write("                            <div class=\"form-row\">  \n");
       out.write("\n");
       out.write("                                <div class=\"form-group col-sm-3\">\n");
       out.write("\n");
-      out.write("                                    <label for=\"inputEndereco\">RA:</label>\n");
+      out.write("                                    <label for=\"inputRa\">RA:</label>\n");
       out.write("                                    <input type=\"text\" name=\"ra\" class=\"form-control\" id=\"inputRA\" placeholder=\"RA\">\n");
       out.write("\n");
       out.write("                                </div>\n");
       out.write("                                <div class=\"form-group col-sm-9\">\n");
       out.write("\n");
-      out.write("                                    <label for=\"inputEndereco\">Nome:</label>\n");
+      out.write("                                    <label for=\"inputNome\">Nome:</label>\n");
       out.write("                                    <input type=\"text\" name=\"nome\" class=\"form-control\" id=\"inputNome\" placeholder=\"Nome\">\n");
       out.write("\n");
       out.write("                                </div>\n");
@@ -186,7 +227,7 @@ public final class Client_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("                                <div class=\"form-group col-sm-12\">\n");
       out.write("\n");
-      out.write("                                    <label for=\"inputEndereco\">Email:</label>\n");
+      out.write("                                    <label for=\"inputEmail\">Email:</label>\n");
       out.write("                                    <input type=\"email\" name=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\">\n");
       out.write("\n");
       out.write("                                </div>\n");
@@ -205,7 +246,112 @@ public final class Client_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            </div>\n");
       out.write("        </div>\n");
       out.write("      </div>\n");
+      out.write("\n");
+      out.write("<!---------------------------------MODAL-ALTERAR--------------------------------->\n");
+      out.write("      \n");
+      out.write("      <div class=\"modal fade\" id=\"modal-alterar\" tabindex=\"-1\" role=\"dialog\"> <!-- fade = animação -->\n");
+      out.write("        <div class=\"modal-dialog modal-md\" role=\"document\">\n");
+      out.write("            <div class=\"modal-content\">\n");
+      out.write("            \n");
+      out.write("                <div class=\"modal-header\">\n");
+      out.write("                    \n");
+      out.write("                    <h3 class=\"modal-title\">Alterar Aluno</h3>\n");
+      out.write("                    \n");
+      out.write("                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">\n");
+      out.write("                        <span>&times;</span><!-- $time; = x -->\n");
+      out.write("                    </button>\n");
+      out.write("                    \n");
+      out.write("                </div>\n");
+      out.write("                \n");
+      out.write("                <div class=\"modal-body\">\n");
+      out.write("                    <div class=\"container-fluid\">\n");
+      out.write("                        \n");
+      out.write("                        <form method=\"get\" action=\"ALTERAR\">\n");
+      out.write("\n");
+      out.write("                            <div class=\"form-row\">  \n");
+      out.write("\n");
+      out.write("                                <div class=\"form-group col-sm-3\">\n");
+      out.write("\n");
+      out.write("                                    <label for=\"inputRa\">RA:</label>\n");
+      out.write("                                    <input type=\"text\" name=\"ra\" class=\"form-control\" id=\"inputRA\" placeholder=\"RA\">\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"form-group col-sm-9\">\n");
+      out.write("\n");
+      out.write("                                    <label for=\"inputNome\">Nome:</label>\n");
+      out.write("                                    <input type=\"text\" name=\"nome\" class=\"form-control\" id=\"inputNome\" placeholder=\"Nome\">\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                                \n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"form-row\">  \n");
+      out.write("\n");
+      out.write("                                <div class=\"form-group col-sm-12\">\n");
+      out.write("\n");
+      out.write("                                    <label for=\"inputEmail\">Email:</label>\n");
+      out.write("                                    <input type=\"email\" name=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\">\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("\n");
+      out.write("                            </div>\n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            <div class=\"modal-footer\">\n");
+      out.write("                                <input type=\"submit\" name=\"submit\" class=\"btn btn-danger btn-block\" value=\"Alterar\">\n");
+      out.write("                            </div>\n");
+      out.write("\n");
+      out.write("                        </form>\n");
+      out.write("                        \n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("      </div>\n");
       out.write("    \n");
+      out.write("<!---------------------------------MODAL-EXCLUIR--------------------------------->\n");
+      out.write("      \n");
+      out.write("      <div class=\"modal fade\" id=\"modal-excluir\" tabindex=\"-1\" role=\"dialog\"> <!-- fade = animação -->\n");
+      out.write("        <div class=\"modal-dialog modal-md\" role=\"document\">\n");
+      out.write("            <div class=\"modal-content\">\n");
+      out.write("            \n");
+      out.write("                <div class=\"modal-header\">\n");
+      out.write("                    \n");
+      out.write("                    <h3 class=\"modal-title\">Excluir Aluno</h3>\n");
+      out.write("                    \n");
+      out.write("                    <button type=\"button\" class=\"close\" data-dismiss=\"modal\">\n");
+      out.write("                        <span>&times;</span><!-- $time; = x -->\n");
+      out.write("                    </button>\n");
+      out.write("                    \n");
+      out.write("                </div>\n");
+      out.write("                \n");
+      out.write("                <div class=\"modal-body\">\n");
+      out.write("                    <div class=\"container-fluid\">\n");
+      out.write("                        \n");
+      out.write("                        <form method=\"get\" action=\"EXCLUIR\">\n");
+      out.write("\n");
+      out.write("                            <div class=\"form-row\">  \n");
+      out.write("\n");
+      out.write("                                <div class=\"form-group col-sm-12\">\n");
+      out.write("\n");
+      out.write("                                    <label for=\"inputRa\">RA:</label>\n");
+      out.write("                                    <input type=\"text\" name=\"ra\" class=\"form-control\" id=\"inputRA\" placeholder=\"RA\">\n");
+      out.write("\n");
+      out.write("                                </div>\n");
+      out.write("                            \n");
+      out.write("                            </div>\n");
+      out.write("                            \n");
+      out.write("                            \n");
+      out.write("                            <div class=\"modal-footer\">\n");
+      out.write("                                <input type=\"submit\" name=\"submit\" class=\"btn btn-danger btn-block\" value=\"Excluir\">\n");
+      out.write("                            </div>\n");
+      out.write("\n");
+      out.write("                        </form>\n");
+      out.write("                        \n");
+      out.write("                    </div>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("        </div>\n");
+      out.write("      </div>\n");
       out.write("    \n");
       out.write("    \n");
       out.write("    \n");

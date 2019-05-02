@@ -1,4 +1,4 @@
-/* AUTOMATICALLY GENERATED ON Tue Apr 30 13:48:49 BRT 2019*/
+/* AUTOMATICALLY GENERATED ON Thu May 02 13:20:44 BRT 2019*/
 /* DO NOT EDIT */
 
 grant {
@@ -9,7 +9,10 @@ grant {
 grant      principal * * {
   permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
   permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "ALTERAR", "**";
+  permission javax.security.jacc.WebRoleRefPermission "INCLUIR", "**";
   permission javax.security.jacc.WebRoleRefPermission "br.unicamp.Server.ApplicationConfig", "**";
   permission javax.security.jacc.WebRoleRefPermission "default", "**";
+  permission javax.security.jacc.WebRoleRefPermission "EXCLUIR", "**";
 };
 

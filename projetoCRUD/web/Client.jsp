@@ -21,7 +21,7 @@
     
     <div class="row">
         <div class="col-12">
-            <table class="table">
+            <table class="table" style="max-height: 100px; height: 100px; overflow-y:scroll;">
                 <thead class="thead-dark">
                 <tr>
                     <th scope="col">#</th>
@@ -80,14 +80,49 @@
             <div class="container pl-5">
                 <button class="btn btn-dark btn-lg mb-3 mt-2" data-toggle="modal" data-target="#modal-inserir">Inserir Aluno</button>
                 <br>
-                <button class="btn btn-dark btn-lg mb-3">Alterar Aluno</button>
+                <button class="btn btn-dark btn-lg mb-3" data-toggle="modal" data-target="#modal-alterar">Alterar Aluno</button>
                 <br>
-                <button class="btn btn-dark btn-lg mb-3">Excluir Aluno</button>
+                <button class="btn btn-dark btn-lg mb-3" data-toggle="modal" data-target="#modal-excluir">Excluir Aluno</button>
             </div>
         </div>
     </div>
-                
-    <jsp:include page = "Incluir.jsp" />
+         
+<%
+    String resposta = null;
+    resposta = (String)request.getAttribute("ret");
+    if(resposta != null)
+    {
+        if(resposta.equals("incluirTrue") || resposta == "incluirTrue")
+        {
+%>
+    <h2>Aluno incluido com sucesso!</h2>
+<%  
+        }
+        else
+            if(resposta.equals("excluirTrue") || resposta == "excluirTrue")
+            {
+%>
+                <h2>Aluno excluido com sucesso!</h2>
+<%  
+            }
+            if(resposta.equals("alterarTrue") || resposta == "alterarTrue")
+            {
+%>
+                <h2>Aluno alterado com sucesso!</h2>
+<%  
+            }
+                else
+                {
+    %>
+                    <h2><%= resposta %></h2>
+    <%       
+                }
+        //request.removeAttribute("include");
+        //RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
+        //dispatcher.forward( request, response);
+    }
+            
+%>
     
 <!---------------------------------MODAL-INSERIR--------------------------------->
       
@@ -108,19 +143,19 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         
-                        <form action="Client.jsp">
+                        <form method="get" action="INCLUIR">
 
                             <div class="form-row">  
 
                                 <div class="form-group col-sm-3">
 
-                                    <label for="inputEndereco">RA:</label>
+                                    <label for="inputRa">RA:</label>
                                     <input type="text" name="ra" class="form-control" id="inputRA" placeholder="RA">
 
                                 </div>
                                 <div class="form-group col-sm-9">
 
-                                    <label for="inputEndereco">Nome:</label>
+                                    <label for="inputNome">Nome:</label>
                                     <input type="text" name="nome" class="form-control" id="inputNome" placeholder="Nome">
 
                                 </div>
@@ -130,7 +165,7 @@
 
                                 <div class="form-group col-sm-12">
 
-                                    <label for="inputEndereco">Email:</label>
+                                    <label for="inputEmail">Email:</label>
                                     <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
 
                                 </div>
@@ -149,7 +184,112 @@
             </div>
         </div>
       </div>
+
+<!---------------------------------MODAL-ALTERAR--------------------------------->
+      
+      <div class="modal fade" id="modal-alterar" tabindex="-1" role="dialog"> <!-- fade = animação -->
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    
+                    <h3 class="modal-title">Alterar Aluno</h3>
+                    
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span><!-- $time; = x -->
+                    </button>
+                    
+                </div>
+                
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        <form method="get" action="ALTERAR">
+
+                            <div class="form-row">  
+
+                                <div class="form-group col-sm-3">
+
+                                    <label for="inputRa">RA:</label>
+                                    <input type="text" name="ra" class="form-control" id="inputRA" placeholder="RA">
+
+                                </div>
+                                <div class="form-group col-sm-9">
+
+                                    <label for="inputNome">Nome:</label>
+                                    <input type="text" name="nome" class="form-control" id="inputNome" placeholder="Nome">
+
+                                </div>
+                                
+                            </div>
+                            <div class="form-row">  
+
+                                <div class="form-group col-sm-12">
+
+                                    <label for="inputEmail">Email:</label>
+                                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+
+                                </div>
+
+                            </div>
+                            
+                            
+                            <div class="modal-footer">
+                                <input type="submit" name="submit" class="btn btn-danger btn-block" value="Alterar">
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
     
+<!---------------------------------MODAL-EXCLUIR--------------------------------->
+      
+      <div class="modal fade" id="modal-excluir" tabindex="-1" role="dialog"> <!-- fade = animação -->
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    
+                    <h3 class="modal-title">Excluir Aluno</h3>
+                    
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span><!-- $time; = x -->
+                    </button>
+                    
+                </div>
+                
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        <form method="get" action="EXCLUIR">
+
+                            <div class="form-row">  
+
+                                <div class="form-group col-sm-12">
+
+                                    <label for="inputRa">RA:</label>
+                                    <input type="text" name="ra" class="form-control" id="inputRA" placeholder="RA">
+
+                                </div>
+                            
+                            </div>
+                            
+                            
+                            <div class="modal-footer">
+                                <input type="submit" name="submit" class="btn btn-danger btn-block" value="Excluir">
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
     
     
     
