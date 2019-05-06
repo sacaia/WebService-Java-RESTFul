@@ -70,6 +70,15 @@ public class Aluno implements Cloneable
         return ret;
     }
 
+    public String toJson()
+    {
+        String ret="";
+        
+        ret = "{ " + '"' + "Ra";
+        
+        return ret;
+    }
+    
     public boolean equals (Object obj)
     {
         if (this==obj)

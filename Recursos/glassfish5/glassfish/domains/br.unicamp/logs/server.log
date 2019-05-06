@@ -2902,3 +2902,1068 @@ java.lang.IllegalStateException: Service already unregistered.
 [2019-05-02T13:27:11.999-0300] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=758 _ThreadName=Thread-8] [timeMillis: 1556814431999] [levelValue: 800] [[
   JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
 
+[2019-05-06T17:57:07.088-0300] [glassfish 5.0] [INFO] [NCLS-LOGGING-00009] [javax.enterprise.logging] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1557176226753] [timeMillis: 1557176227088] [levelValue: 800] [[
+  Running GlassFish Version: GlassFish Server Open Source Edition  5.0  (build 25)]]
+
+[2019-05-06T17:57:07.132-0300] [glassfish 5.0] [INFO] [NCLS-LOGGING-00010] [javax.enterprise.logging] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1557176226753] [timeMillis: 1557176227132] [levelValue: 800] [[
+  Server log file is using Formatter class: com.sun.enterprise.server.logging.ODLLogFormatter]]
+
+[2019-05-06T17:57:07.289-0300] [glassfish 5.0] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176227289] [levelValue: 800] [[
+  Realm [admin-realm] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2019-05-06T17:57:07.292-0300] [glassfish 5.0] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176227292] [levelValue: 800] [[
+  Realm [file] of classtype [com.sun.enterprise.security.auth.realm.file.FileRealm] successfully created.]]
+
+[2019-05-06T17:57:07.296-0300] [glassfish 5.0] [INFO] [NCLS-SECURITY-01115] [javax.enterprise.system.core.security] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176227296] [levelValue: 800] [[
+  Realm [certificate] of classtype [com.sun.enterprise.security.auth.realm.certificate.CertificateRealm] successfully created.]]
+
+[2019-05-06T17:57:07.741-0300] [glassfish 5.0] [INFO] [SEC-SVCS-00100] [javax.enterprise.security.services] [tid: _ThreadID=23 _ThreadName=RunLevelControllerThread-1557176226753] [timeMillis: 1557176227741] [levelValue: 800] [[
+  Authorization Service has successfully initialized.]]
+
+[2019-05-06T17:57:07.763-0300] [glassfish 5.0] [INFO] [jts.startup_msg] [javax.enterprise.system.core.transaction.com.sun.jts.CosTransactions] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176227763] [levelValue: 800] [[
+  JTS5014: Recoverable JTS instance, serverId = [100]]]
+
+[2019-05-06T17:57:07.783-0300] [glassfish 5.0] [INFO] [] [org.glassfish.ha.store.spi.BackingStoreFactoryRegistry] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1557176226752] [timeMillis: 1557176227783] [levelValue: 800] [[
+  Registered org.glassfish.ha.store.adapter.cache.ShoalBackingStoreProxy for persistence-type = replicated in BackingStoreFactoryRegistry]]
+
+[2019-05-06T17:57:07.976-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176227976] [levelValue: 800] [[
+  Grizzly Framework 2.4.1 started in: 171ms - bound to [/0.0.0.0:8080]]]
+
+[2019-05-06T17:57:08.028-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228028] [levelValue: 800] [[
+  Grizzly Framework 2.4.1 started in: 30ms - bound to [/0.0.0.0:8181]]]
+
+[2019-05-06T17:57:08.071-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=24 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228071] [levelValue: 800] [[
+  Grizzly Framework 2.4.1 started in: 25ms - bound to [/0.0.0.0:4848]]]
+
+[2019-05-06T17:57:08.204-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228204] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:08.358-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=22 _ThreadName=RunLevelControllerThread-1557176226752] [timeMillis: 1557176228358] [levelValue: 800] [[
+  Grizzly Framework 2.4.1 started in: 104ms - bound to [/0.0.0.0:3700]]]
+
+[2019-05-06T17:57:08.779-0300] [glassfish 5.0] [SEVERE] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228779] [levelValue: 1000] [[
+  The SSL certificate has expired: [
+[
+  Version: V3
+  Subject: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  Signature Algorithm: SHA1withRSA, OID = 1.2.840.113549.1.1.5
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 135786214035069526348186531221551781468391756233528066061569654028671100866720352830303278016129003918213826297308054231261658522889438712013757624116391437358730449661353175673177742307421061340003741057138887918110217006515773038453829253517076741780039735595086881329494037450587568122088113584549069375417
+  public exponent: 65537
+  Validity: [From: Sat Aug 22 13:41:51 BRT 1998,
+               To: Wed Aug 22 13:41:51 BRT 2018]
+  Issuer: OU=Equifax Secure Certificate Authority, O=Equifax, C=US
+  SerialNumber: [    35def4cf]
+
+Certificate Extensions: 7
+[1]: ObjectId: 1.2.840.113533.7.65.0 Criticality=false
+Extension unknown: DER encoded OCTET string =
+0000: 04 0D 30 0B 1B 05 56 33   2E 30 63 03 02 06 C0     ..0...V3.0c....
+
+
+[2]: ObjectId: 2.5.29.35 Criticality=false
+AuthorityKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+[3]: ObjectId: 2.5.29.19 Criticality=false
+BasicConstraints:[
+  CA:true
+  PathLen:2147483647
+]
+
+[4]: ObjectId: 2.5.29.31 Criticality=false
+CRLDistributionPoints [
+  [DistributionPoint:
+     [CN=CRL1, OU=Equifax Secure Certificate Authority, O=Equifax, C=US]
+]]
+
+[5]: ObjectId: 2.5.29.15 Criticality=false
+KeyUsage [
+  Key_CertSign
+  Crl_Sign
+]
+
+[6]: ObjectId: 2.5.29.16 Criticality=false
+PrivateKeyUsage: [
+To: Wed Aug 22 13:41:51 BRT 2018]
+
+[7]: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 48 E6 68 F9 2B D2 B2 95   D7 47 D8 23 20 10 4F 33  H.h.+....G.# .O3
+0010: 98 90 9F D4                                        ....
+]
+]
+
+]
+  Algorithm: [SHA1withRSA]
+  Signature:
+0000: 58 CE 29 EA FC F7 DE B5   CE 02 B9 17 B5 85 D1 B9  X.).............
+0010: E3 E0 95 CC 25 31 0D 00   A6 92 6E 7F B6 92 63 9E  ....%1....n...c.
+0020: 50 95 D1 9A 6F E4 11 DE   63 85 6E 98 EE A8 FF 5A  P...o...c.n....Z
+0030: C8 D3 55 B2 66 71 57 DE   C0 21 EB 3D 2A A7 23 49  ..U.fqW..!.=*.#I
+0040: 01 04 86 42 7B FC EE 7F   A2 16 52 B5 67 67 D3 40  ...B......R.gg.@
+0050: DB 3B 26 58 B2 28 77 3D   AE 14 77 61 D6 FA 2A 66  .;&X.(w=..wa..*f
+0060: 27 A0 0D FA A7 73 5C EA   70 F1 94 21 65 44 5F FA  '....s\.p..!eD_.
+0070: FC EF 29 68 A9 A2 87 79   EF 79 EF 4F AC 07 77 38  ..)h...y.y.O..w8
+
+]]]
+
+[2019-05-06T17:57:08.784-0300] [glassfish 5.0] [SEVERE] [NCLS-SECURITY-05054] [javax.enterprise.system.security.ssl] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228784] [levelValue: 1000] [[
+  The SSL certificate has expired: [
+[
+  Version: V1
+  Subject: CN=GTE CyberTrust Global Root, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  Signature Algorithm: MD5withRSA, OID = 1.2.840.113549.1.1.4
+
+  Key:  Sun RSA public key, 1024 bits
+  modulus: 104674226241368487598835828377585222181792546532354327780214427055917513664449991602803276678454577364904540367827644455215731003386468752240014232146814457308076052176227490263634768927290191763858631579785604655038492469791381988347440106477066514204303723029602991655085187937840556671697442212352844587673
+  public exponent: 65537
+  Validity: [From: Wed Aug 12 21:29:00 BRT 1998,
+               To: Mon Aug 13 20:59:00 BRT 2018]
+  Issuer: CN=GTE CyberTrust Global Root, OU="GTE CyberTrust Solutions, Inc.", O=GTE Corporation, C=US
+  SerialNumber: [    01a5]
+
+]
+  Algorithm: [MD5withRSA]
+  Signature:
+0000: 6D EB 1B 09 E9 5E D9 51   DB 67 22 61 A4 2A 3C 48  m....^.Q.g"a.*<H
+0010: 77 E3 A0 7C A6 DE 73 A2   14 03 85 3D FB AB 0E 30  w.....s....=...0
+0020: C5 83 16 33 81 13 08 9E   7B 34 4E DF 40 C8 74 D7  ...3.....4N.@.t.
+0030: B9 7D DC F4 76 55 7D 9B   63 54 18 E9 F0 EA F3 5C  ....vU..cT.....\
+0040: B1 D9 8B 42 1E B9 C0 95   4E BA FA D5 E2 7C F5 68  ...B....N......h
+0050: 61 BF 8E EC 05 97 5F 5B   B0 D7 A3 85 34 C4 24 A7  a....._[....4.$.
+0060: 0D 0F 95 93 EF CB 94 D8   9E 1F 9D 5C 85 6D C7 AA  ...........\.m..
+0070: AE 4F 1F 22 B5 CD 95 AD   BA A7 CC F9 AB 0B 7A 7F  .O."..........z.
+
+]]]
+
+[2019-05-06T17:57:08.792-0300] [glassfish 5.0] [INFO] [NCLS-SECURITY-01002] [javax.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228792] [levelValue: 800] [[
+  Java security manager is disabled.]]
+
+[2019-05-06T17:57:08.793-0300] [glassfish 5.0] [INFO] [NCLS-SECURITY-01010] [javax.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228793] [levelValue: 800] [[
+  Entering Security Startup Service.]]
+
+[2019-05-06T17:57:08.795-0300] [glassfish 5.0] [INFO] [NCLS-SECURITY-01143] [javax.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228795] [levelValue: 800] [[
+  Loading policy provider com.sun.enterprise.security.provider.PolicyWrapper.]]
+
+[2019-05-06T17:57:08.822-0300] [glassfish 5.0] [INFO] [NCLS-SECURITY-01011] [javax.enterprise.system.core.security] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176228822] [levelValue: 800] [[
+  Security Service(s) started successfully.]]
+
+[2019-05-06T17:57:09.023-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229023] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2019-05-06T17:57:09.029-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229029] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2019-05-06T17:57:09.031-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229031] [levelValue: 800] [[
+  Created HTTP listener admin-listener on host/port 0.0.0.0:4848]]
+
+[2019-05-06T17:57:09.058-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229058] [levelValue: 800] [[
+  Created virtual server server]]
+
+[2019-05-06T17:57:09.060-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00200] [javax.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229060] [levelValue: 800] [[
+  Created virtual server __asadmin]]
+
+[2019-05-06T17:57:09.258-0300] [glassfish 5.0] [INFO] [AS-WEB-CORE-00306] [javax.enterprise.web.core] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229258] [levelValue: 800] [[
+  Setting JAAS app name glassfish-web]]
+
+[2019-05-06T17:57:09.258-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00201] [javax.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229258] [levelValue: 800] [[
+  Virtual server server loaded default web module ]]
+
+[2019-05-06T17:57:09.596-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229596] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:09.633-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229633] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:09.635-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229635] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:09.732-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web.util] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176229732] [levelValue: 900] [[
+  The web application [unknown] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2019-05-06T17:57:10.373-0300] [glassfish 5.0] [INFO] [] [org.hibernate.validator.internal.util.Version] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176230373] [levelValue: 800] [[
+  HV000001: Hibernate Validator 6.0.2.Final]]
+
+[2019-05-06T17:57:10.540-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176230540] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T17:57:10.544-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00022] [javax.enterprise.system.core] [tid: _ThreadID=25 _ThreadName=RunLevelControllerThread-1557176226759] [timeMillis: 1557176230544] [levelValue: 800] [[
+  Loading application projetoCRUD done in 3.115 ms]]
+
+[2019-05-06T17:57:10.547-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00017] [javax.enterprise.system.core] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1557176230547] [levelValue: 800] [[
+  GlassFish Server Open Source Edition  5.0  (25) startup time : Felix (4.337ms), startup services(3.800ms), total(8.137ms)]]
+
+[2019-05-06T17:57:10.653-0300] [glassfish 5.0] [INFO] [NCLS-BOOTSTRAP-00027] [javax.enterprise.bootstrap] [tid: _ThreadID=1 _ThreadName=main] [timeMillis: 1557176230653] [levelValue: 800] [[
+  Registered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@626e0c86 as OSGi service registration: org.apache.felix.framework.ServiceRegistrationImpl@773c2214.]]
+
+[2019-05-06T17:57:10.742-0300] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=20 _ThreadName=Thread-10] [timeMillis: 1557176230742] [levelValue: 800] [[
+  C:\Users\u17189\Documents\GitHub\WebService-Java-RESTFul\Recursos\glassfish5\glassfish\domains\br.unicamp\autodeploy\bundles does not exist, please create it.]]
+
+[2019-05-06T17:57:10.939-0300] [glassfish 5.0] [INFO] [NCLS-JMX-00005] [javax.enterprise.system.jmx] [tid: _ThreadID=79 _ThreadName=Thread-20] [timeMillis: 1557176230939] [levelValue: 800] [[
+  JMXStartupService has started JMXConnector on JMXService URL service:jmx:rmi://Lapa30.academico.cotuca.unicamp.br:8686/jndi/rmi://Lapa30.academico.cotuca.unicamp.br:8686/jmxrmi]]
+
+[2019-05-06T17:57:12.462-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=108 _ThreadName=pool-32-thread-1] [timeMillis: 1557176232462] [levelValue: 800] [[
+  Created HTTP listener http-listener-2 on host/port 0.0.0.0:8181]]
+
+[2019-05-06T17:57:12.485-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=108 _ThreadName=pool-32-thread-1] [timeMillis: 1557176232485] [levelValue: 800] [[
+  Grizzly Framework 2.4.1 started in: 6ms - bound to [/0.0.0.0:8181]]]
+
+[2019-05-06T17:57:12.630-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00198] [javax.enterprise.web] [tid: _ThreadID=107 _ThreadName=pool-31-thread-1] [timeMillis: 1557176232630] [levelValue: 800] [[
+  Created HTTP listener http-listener-1 on host/port 0.0.0.0:8080]]
+
+[2019-05-06T17:57:12.642-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00087] [javax.enterprise.system.core] [tid: _ThreadID=107 _ThreadName=pool-31-thread-1] [timeMillis: 1557176232642] [levelValue: 800] [[
+  Grizzly Framework 2.4.1 started in: 9ms - bound to [/0.0.0.0:8080]]]
+
+[2019-05-06T17:57:13.411-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557176233411] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:13.467-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557176233467] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:13.492-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557176233492] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:13.493-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557176233493] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T17:57:13.764-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557176233764] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T17:57:13.842-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557176233842] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 926 milliseconds.]]
+
+[2019-05-06T18:13:28.597-0300] [glassfish 5.0] [SEVERE] [] [org.apache.jasper.compiler.Compiler] [tid: _ThreadID=119 _ThreadName=http-listener-1(3)] [timeMillis: 1557177208597] [levelValue: 1000] [[
+  Error compiling file: C:\Users\u17189\Documents\GitHub\WebService-Java-RESTFul\Recursos\glassfish5\glassfish\domains\br.unicamp\generated\jsp\projetoCRUD\org\apache\jsp\consultaRA_jsp.java]]
+
+[2019-05-06T18:13:28.600-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=119 _ThreadName=http-listener-1(3)] [timeMillis: 1557177208600] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+source value 1.5 is obsolete and will be removed in a future release
+
+PWC6199: Generated servlet error:
+target value 1.5 is obsolete and will be removed in a future release
+
+PWC6199: Generated servlet error:
+To suppress warnings about obsolete options, use -Xlint:-options.
+
+PWC6199: Generated servlet error:
+'try' without 'catch' or 'finally'
+
+PWC6199: Generated servlet error:
+illegal start of type
+
+PWC6199: Generated servlet error:
+illegal start of type
+
+PWC6199: Generated servlet error:
+';' expected
+
+PWC6199: Generated servlet error:
+<identifier> expected
+
+PWC6199: Generated servlet error:
+<identifier> expected
+
+PWC6199: Generated servlet error:
+class, interface, or enum expected
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:129)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:299)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:453)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1580)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:652)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:591)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:463)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:168)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:242)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-05-06T18:13:36.019-0300] [glassfish 5.0] [SEVERE] [] [org.apache.jasper.compiler.Compiler] [tid: _ThreadID=118 _ThreadName=http-listener-1(2)] [timeMillis: 1557177216019] [levelValue: 1000] [[
+  Error compiling file: C:\Users\u17189\Documents\GitHub\WebService-Java-RESTFul\Recursos\glassfish5\glassfish\domains\br.unicamp\generated\jsp\projetoCRUD\org\apache\jsp\consultaRA_jsp.java]]
+
+[2019-05-06T18:13:36.020-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=118 _ThreadName=http-listener-1(2)] [timeMillis: 1557177216020] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+source value 1.5 is obsolete and will be removed in a future release
+
+PWC6199: Generated servlet error:
+target value 1.5 is obsolete and will be removed in a future release
+
+PWC6199: Generated servlet error:
+To suppress warnings about obsolete options, use -Xlint:-options.
+
+PWC6199: Generated servlet error:
+'try' without 'catch' or 'finally'
+
+PWC6199: Generated servlet error:
+illegal start of type
+
+PWC6199: Generated servlet error:
+illegal start of type
+
+PWC6199: Generated servlet error:
+';' expected
+
+PWC6199: Generated servlet error:
+<identifier> expected
+
+PWC6199: Generated servlet error:
+<identifier> expected
+
+PWC6199: Generated servlet error:
+class, interface, or enum expected
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:129)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:299)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:453)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1580)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:652)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:591)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:463)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:168)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:242)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-05-06T18:14:38.083-0300] [glassfish 5.0] [SEVERE] [] [org.apache.jasper.compiler.Compiler] [tid: _ThreadID=119 _ThreadName=http-listener-1(3)] [timeMillis: 1557177278083] [levelValue: 1000] [[
+  Error compiling file: C:\Users\u17189\Documents\GitHub\WebService-Java-RESTFul\Recursos\glassfish5\glassfish\domains\br.unicamp\generated\jsp\projetoCRUD\org\apache\jsp\consultaRA_jsp.java]]
+
+[2019-05-06T18:14:38.083-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=119 _ThreadName=http-listener-1(3)] [timeMillis: 1557177278083] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+org.apache.jasper.JasperException: PWC6033: Error in Javac compilation for JSP
+
+PWC6199: Generated servlet error:
+source value 1.5 is obsolete and will be removed in a future release
+
+PWC6199: Generated servlet error:
+target value 1.5 is obsolete and will be removed in a future release
+
+PWC6199: Generated servlet error:
+To suppress warnings about obsolete options, use -Xlint:-options.
+
+PWC6199: Generated servlet error:
+'try' without 'catch' or 'finally'
+
+PWC6199: Generated servlet error:
+illegal start of type
+
+PWC6199: Generated servlet error:
+illegal start of type
+
+PWC6199: Generated servlet error:
+';' expected
+
+PWC6199: Generated servlet error:
+<identifier> expected
+
+PWC6199: Generated servlet error:
+<identifier> expected
+
+PWC6199: Generated servlet error:
+class, interface, or enum expected
+
+
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:129)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:299)
+	at org.apache.jasper.compiler.Compiler.generateClass(Compiler.java:392)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:453)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:625)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:375)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1580)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:652)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:591)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:463)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:168)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:242)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-05-06T18:15:41.598-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=120 _ThreadName=http-listener-1(4)] [timeMillis: 1557177341598] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+java.lang.Exception: Nao cadastrado
+	at bd.daos.Alunos.getAluno(Alunos.java:198)
+	at org.apache.jsp.consultaRA_jsp._jspService(consultaRA_jsp.java:72)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1580)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:652)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:591)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:463)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:168)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:242)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-05-06T18:17:14.258-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web.util] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434258] [levelValue: 900] [[
+  The web application [/projetoCRUD] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2019-05-06T18:17:14.260-0300] [glassfish 5.0] [SEVERE] [] [javax.enterprise.web.util] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434260] [levelValue: 1000] [[
+  The web application [/projetoCRUD] created a ThreadLocal with key of type [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1] (value [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1@151fdc97]) and a value of type [com.microsoft.sqlserver.jdbc.ActivityId] (value [6f88ffa7-6492-4813-85bb-57dc9ba0255b-1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2019-05-06T18:17:14.393-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434393] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:17:14.422-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434422] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:17:14.434-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434434] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:17:14.435-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434435] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:17:14.614-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434614] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:17:14.629-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177434629] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 406 milliseconds.]]
+
+[2019-05-06T18:19:26.804-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web.util] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177566804] [levelValue: 900] [[
+  The web application [/projetoCRUD] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2019-05-06T18:19:26.805-0300] [glassfish 5.0] [SEVERE] [] [javax.enterprise.web.util] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177566805] [levelValue: 1000] [[
+  The web application [/projetoCRUD] created a ThreadLocal with key of type [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1] (value [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1@438875ce]) and a value of type [com.microsoft.sqlserver.jdbc.ActivityId] (value [71a00763-d711-40cf-9aea-08e7eac98e5f-1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2019-05-06T18:19:26.933-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177566933] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:26.959-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177566959] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:26.971-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177566971] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:26.972-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177566972] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:27.130-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177567130] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:19:27.143-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177567143] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 369 milliseconds.]]
+
+[2019-05-06T18:19:27.347-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177567347] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:27.372-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177567372] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:27.383-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177567383] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:27.384-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177567384] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:19:27.587-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177567587] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:19:27.605-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557177567605] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 386 milliseconds.]]
+
+[2019-05-06T18:20:30.337-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177630337] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:30.364-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177630364] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:30.375-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177630375] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:30.376-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177630376] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:30.553-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177630553] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:20:30.588-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177630588] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 377 milliseconds.]]
+
+[2019-05-06T18:20:59.410-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177659410] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:59.434-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177659434] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:59.445-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177659445] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:59.445-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177659445] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:20:59.602-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177659602] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:20:59.635-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177659635] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 362 milliseconds.]]
+
+[2019-05-06T18:21:57.567-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177717567] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:21:57.589-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177717589] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:21:57.600-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177717600] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:21:57.600-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177717600] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:21:57.759-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177717759] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:21:57.773-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557177717773] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 318 milliseconds.]]
+
+[2019-05-06T18:22:02.348-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177722348] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:22:02.374-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177722374] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:22:02.386-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177722386] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:22:02.387-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177722387] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:22:02.536-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177722536] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:22:02.562-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557177722562] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 344 milliseconds.]]
+
+[2019-05-06T18:25:07.488-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557177907488] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:25:07.511-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557177907511] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:25:07.524-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557177907524] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:25:07.525-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557177907525] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:25:07.678-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557177907678] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:25:07.708-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557177907708] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 336 milliseconds.]]
+
+[2019-05-06T18:32:05.098-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web.util] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325098] [levelValue: 900] [[
+  The web application [/projetoCRUD] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2019-05-06T18:32:05.098-0300] [glassfish 5.0] [SEVERE] [] [javax.enterprise.web.util] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325098] [levelValue: 1000] [[
+  The web application [/projetoCRUD] created a ThreadLocal with key of type [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1] (value [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1@29d66694]) and a value of type [com.microsoft.sqlserver.jdbc.ActivityId] (value [931ebf68-2770-4055-bbd5-9b1d7f84c7d8-1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2019-05-06T18:32:05.204-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325204] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:05.227-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325227] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:05.237-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325237] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:05.238-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325238] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:05.361-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325361] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:32:05.370-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178325370] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 295 milliseconds.]]
+
+[2019-05-06T18:32:07.534-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557178327534] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:07.557-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557178327557] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:07.567-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557178327567] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:07.568-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557178327568] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:07.698-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557178327698] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:32:07.707-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557178327707] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 314 milliseconds.]]
+
+[2019-05-06T18:32:23.631-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557178343631] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:23.652-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557178343652] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:23.663-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557178343663] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:23.664-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557178343664] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:23.784-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557178343784] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:32:23.795-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557178343795] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 278 milliseconds.]]
+
+[2019-05-06T18:32:28.044-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178348044] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:28.062-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178348062] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:28.072-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178348072] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:28.073-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178348073] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:32:28.186-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178348186] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:32:28.194-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=54 _ThreadName=admin-listener(5)] [timeMillis: 1557178348194] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 286 milliseconds.]]
+
+[2019-05-06T18:37:48.545-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=117 _ThreadName=http-listener-1(1)] [timeMillis: 1557178668545] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+java.lang.Exception: Nao existem alunos cadastrados com esse nome
+	at bd.daos.Alunos.listarNome(Alunos.java:295)
+	at org.apache.jsp.consultaNome_jsp._jspService(consultaNome_jsp.java:75)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1580)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:652)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:591)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:463)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:168)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:242)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-05-06T18:37:59.694-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=121 _ThreadName=http-listener-1(5)] [timeMillis: 1557178679694] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+java.lang.Exception: Nao existem alunos cadastrados com esse nome
+	at bd.daos.Alunos.listarNome(Alunos.java:295)
+	at org.apache.jsp.consultaNome_jsp._jspService(consultaNome_jsp.java:75)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1580)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:652)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:591)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:463)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:168)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:242)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-05-06T18:38:19.341-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web] [tid: _ThreadID=119 _ThreadName=http-listener-1(3)] [timeMillis: 1557178699341] [levelValue: 900] [[
+  StandardWrapperValve[jsp]: Servlet.service() for servlet jsp threw exception
+java.lang.Exception: Nao cadastrado
+	at bd.daos.Alunos.getAluno(Alunos.java:198)
+	at org.apache.jsp.consultaRA_jsp._jspService(consultaRA_jsp.java:75)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:111)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:411)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:473)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:377)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:791)
+	at org.apache.catalina.core.StandardWrapper.service(StandardWrapper.java:1580)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:258)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:160)
+	at org.apache.catalina.core.StandardPipeline.doInvoke(StandardPipeline.java:652)
+	at org.apache.catalina.core.StandardPipeline.invoke(StandardPipeline.java:591)
+	at com.sun.enterprise.web.WebPipeline.invoke(WebPipeline.java:99)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:155)
+	at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:371)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:238)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper$HttpHandlerCallable.call(ContainerMapper.java:463)
+	at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:168)
+	at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:206)
+	at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:180)
+	at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:242)
+	at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:284)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:201)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:133)
+	at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:112)
+	at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+	at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:539)
+	at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:112)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:117)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:56)
+	at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:137)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:593)
+	at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:573)
+	at java.lang.Thread.run(Thread.java:748)
+]]
+
+[2019-05-06T18:44:03.899-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web.util] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179043899] [levelValue: 900] [[
+  The web application [/projetoCRUD] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2019-05-06T18:44:03.900-0300] [glassfish 5.0] [SEVERE] [] [javax.enterprise.web.util] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179043900] [levelValue: 1000] [[
+  The web application [/projetoCRUD] created a ThreadLocal with key of type [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1] (value [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1@372cc08b]) and a value of type [com.microsoft.sqlserver.jdbc.ActivityId] (value [47618940-dd24-44b1-b0e6-8ddb8e539d89-1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2019-05-06T18:44:04.028-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179044028] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:44:04.047-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179044047] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:44:04.056-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179044056] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:44:04.057-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179044057] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:44:04.215-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179044215] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:44:04.230-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179044230] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 353 milliseconds.]]
+
+[2019-05-06T18:45:24.626-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web.util] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124626] [levelValue: 900] [[
+  The web application [/projetoCRUD] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2019-05-06T18:45:24.627-0300] [glassfish 5.0] [SEVERE] [] [javax.enterprise.web.util] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124627] [levelValue: 1000] [[
+  The web application [/projetoCRUD] created a ThreadLocal with key of type [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1] (value [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1@6a5563c1]) and a value of type [com.microsoft.sqlserver.jdbc.ActivityId] (value [51ff8f4d-4ce4-4099-8a5e-ca0758e93c40-1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2019-05-06T18:45:24.723-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124723] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:45:24.742-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124742] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:45:24.752-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124752] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:45:24.752-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124752] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:45:24.891-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124891] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:45:24.908-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=52 _ThreadName=admin-listener(3)] [timeMillis: 1557179124908] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 301 milliseconds.]]
+
+[2019-05-06T18:57:38.133-0300] [glassfish 5.0] [WARNING] [] [javax.enterprise.web.util] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858133] [levelValue: 900] [[
+  The web application [/projetoCRUD] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.]]
+
+[2019-05-06T18:57:38.134-0300] [glassfish 5.0] [SEVERE] [] [javax.enterprise.web.util] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858134] [levelValue: 1000] [[
+  The web application [/projetoCRUD] created a ThreadLocal with key of type [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1] (value [com.microsoft.sqlserver.jdbc.ActivityCorrelator$1@1fd62b5a]) and a value of type [com.microsoft.sqlserver.jdbc.ActivityId] (value [6b17eba5-2aec-4871-9c53-7f871d2d2c62-1]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.]]
+
+[2019-05-06T18:57:38.319-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858319] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.340-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858340] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.350-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858350] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.351-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858351] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.486-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858486] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:57:38.523-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=50 _ThreadName=admin-listener(1)] [timeMillis: 1557179858523] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 428 milliseconds.]]
+
+[2019-05-06T18:57:38.739-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557179858739] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.757-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557179858757] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.767-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557179858767] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.768-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557179858768] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:38.879-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557179858879] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:57:38.894-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557179858894] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 267 milliseconds.]]
+
+[2019-05-06T18:57:53.945-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557179873945] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:53.964-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557179873964] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:53.973-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557179873973] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:53.974-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557179873974] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T18:57:54.086-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557179874086] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T18:57:54.094-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557179874094] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 257 milliseconds.]]
+
+[2019-05-06T19:01:55.080-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180115080] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:55.101-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180115101] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:55.111-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180115111] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:55.112-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180115112] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:55.293-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180115293] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T19:01:55.352-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180115352] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 405 milliseconds.]]
+
+[2019-05-06T19:01:59.143-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180119143] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:59.163-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180119163] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:59.173-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180119173] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:59.173-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180119173] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:01:59.295-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180119295] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T19:01:59.311-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=51 _ThreadName=admin-listener(2)] [timeMillis: 1557180119311] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 298 milliseconds.]]
+
+[2019-05-06T19:02:32.587-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557180152587] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:02:32.607-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557180152607] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:02:32.617-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557180152617] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:02:32.617-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.tools.deployment.common] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557180152617] [levelValue: 800] [[
+  visiting unvisited references]]
+
+[2019-05-06T19:02:32.730-0300] [glassfish 5.0] [INFO] [AS-WEB-GLUE-00172] [javax.enterprise.web] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557180152730] [levelValue: 800] [[
+  Loading application [projetoCRUD] at [/projetoCRUD]]]
+
+[2019-05-06T19:02:32.740-0300] [glassfish 5.0] [INFO] [] [javax.enterprise.system.core] [tid: _ThreadID=53 _ThreadName=admin-listener(4)] [timeMillis: 1557180152740] [levelValue: 800] [[
+  projetoCRUD was successfully deployed in 266 milliseconds.]]
+
+[2019-05-06T19:02:35.870-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=400 _ThreadName=Thread-36] [timeMillis: 1557180155870] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2019-05-06T19:02:35.870-0300] [glassfish 5.0] [INFO] [NCLS-CORE-00092] [javax.enterprise.system.core] [tid: _ThreadID=399 _ThreadName=Thread-35] [timeMillis: 1557180155870] [levelValue: 800] [[
+  Server shutdown initiated]]
+
+[2019-05-06T19:02:35.871-0300] [glassfish 5.0] [WARNING] [NCLS-BOOTSTRAP-00029] [javax.enterprise.bootstrap] [tid: _ThreadID=399 _ThreadName=Thread-35] [timeMillis: 1557180155871] [levelValue: 900] [[
+  Exception while unregistering: 
+java.lang.IllegalStateException: Service already unregistered.
+	at org.apache.felix.framework.ServiceRegistrationImpl.unregister(ServiceRegistrationImpl.java:123)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl.unregisterService(EmbeddedOSGiGlassFishImpl.java:92)
+	at com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl.stop(EmbeddedOSGiGlassFishImpl.java:80)
+	at com.sun.enterprise.v3.admin.StopServer.doExecute(StopServer.java:79)
+	at com.sun.enterprise.v3.admin.StopDomainCommand.execute(StopDomainCommand.java:97)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:540)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2$1.run(CommandRunnerImpl.java:536)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:360)
+	at com.sun.enterprise.v3.admin.CommandRunnerImpl$2.execute(CommandRunnerImpl.java:535)
+	at org.glassfish.api.AsyncImpl$1$1.run(AsyncImpl.java:77)
+]]
+
+[2019-05-06T19:02:35.875-0300] [glassfish 5.0] [INFO] [NCLS-BOOTSTRAP-00028] [javax.enterprise.bootstrap] [tid: _ThreadID=400 _ThreadName=Thread-36] [timeMillis: 1557180155875] [levelValue: 800] [[
+  Unregistered com.sun.enterprise.glassfish.bootstrap.osgi.EmbeddedOSGiGlassFishImpl@626e0c86 from service registry.]]
+
+[2019-05-06T19:02:35.884-0300] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=399 _ThreadName=Thread-10] [timeMillis: 1557180155884] [levelValue: 800] [[
+  FileMonitoring shutdown]]
+
+[2019-05-06T19:02:35.890-0300] [glassfish 5.0] [INFO] [NCLS-JMX-00002] [javax.enterprise.system.jmx] [tid: _ThreadID=399 _ThreadName=Thread-35] [timeMillis: 1557180155890] [levelValue: 800] [[
+  JMXStartupService: Stopped JMXConnectorServer: null]]
+
+[2019-05-06T19:02:35.890-0300] [glassfish 5.0] [INFO] [NCLS-JMX-00001] [javax.enterprise.system.jmx] [tid: _ThreadID=399 _ThreadName=Thread-35] [timeMillis: 1557180155890] [levelValue: 800] [[
+  JMXStartupService and JMXConnectors have been shut down.]]
+
+[2019-05-06T19:02:35.974-0300] [glassfish 5.0] [INFO] [] [] [tid: _ThreadID=409 _ThreadName=Thread-10] [timeMillis: 1557180155974] [levelValue: 800] [[
+  JdbcRuntimeExtension,  getAllSystemRAResourcesAndPools = [GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcResource, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool, GlassFishConfigBean.org.glassfish.jdbc.config.JdbcConnectionPool]]]
+
