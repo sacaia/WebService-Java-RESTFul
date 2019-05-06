@@ -247,7 +247,52 @@ public class Alunos
             MeuResultSet resultado = (MeuResultSet)BDSQLServer.COMANDO.executeQuery ();
 
             if (!resultado.first())
-                throw new Exception ("Nao existem Alunos cadastrados");
+                throw new Exception ("Nao existem alunos cadastrados");
+            
+            ArrayList<Aluno> lista = new ArrayList<Aluno>();
+            int i=0;
+            
+            do
+            {
+            	lista.add(new Aluno(resultado.getString("RA"), resultado.getString("NOME"), resultado.getString("EMAIL")));
+            	i++;
+            }while(resultado.next() == true);
+            	
+            Alunos = new Aluno[i];
+            for(int j=0; j<i; j++)
+            {
+            	Alunos[j] = lista.get(j);
+            }
+			
+	    }
+	    catch (SQLException erro)
+	    {
+	    	erro.printStackTrace();
+	        throw new Exception ("Erro ao recuperar Alunos");
+	    }
+        
+        return Alunos;
+    }
+    
+    public static Aluno[] listarNome(String nome) throws Exception
+    {
+    	Aluno[] Alunos = null;
+        try
+        {
+            String sql;
+
+            sql = "SELECT * " +
+                  "FROM ALUNO " + 
+                  "WHERE nome LIKE ?";
+
+            BDSQLServer.COMANDO.prepareStatement (sql);
+            
+            BDSQLServer.COMANDO.setString (1, "%" + nome + "%");
+
+            MeuResultSet resultado = (MeuResultSet)BDSQLServer.COMANDO.executeQuery ();
+
+            if (!resultado.first())
+                throw new Exception ("Nao existem alunos cadastrados com esse nome");
             
             ArrayList<Aluno> lista = new ArrayList<Aluno>();
             int i=0;

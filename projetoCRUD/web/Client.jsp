@@ -70,14 +70,14 @@
             
             <h1 class="pl-5"> Consultas:</h1>
             
-            <div class="container pl-5">
-                <button class="btn btn-dark btn-lg mb-3 mt-2">Consultar por RA</button>
+            <div class="container pl-5 ml-5">
+                <button class="btn btn-dark btn-lg mb-3 mt-2" data-toggle="modal" data-target="#modal-consulta-ra">Consultar por RA</button>
                 <br>
-                <button class="btn btn-dark btn-lg">Consultar por Nome</button>
+                <button class="btn btn-dark btn-lg" data-toggle="modal" data-target="#modal-consulta-nome">Consultar por Nome</button>
             </div>
             
             <h1 class="pl-5 pt-5"> Outras funcionalidades:</h1>
-            <div class="container pl-5">
+            <div class="container pl-5 ml-5">
                 <button class="btn btn-dark btn-lg mb-3 mt-2" data-toggle="modal" data-target="#modal-inserir">Inserir Aluno</button>
                 <br>
                 <button class="btn btn-dark btn-lg mb-3" data-toggle="modal" data-target="#modal-alterar">Alterar Aluno</button>
@@ -95,28 +95,30 @@
         if(resposta.equals("incluirTrue") || resposta == "incluirTrue")
         {
 %>
-    <h2>Aluno incluido com sucesso!</h2>
+            <h2 class="text-center text-success pb-3 pt-2">Aluno incluido com sucesso!</h2>
 <%  
         }
-        else
+        else{
             if(resposta.equals("excluirTrue") || resposta == "excluirTrue")
             {
 %>
-                <h2>Aluno excluido com sucesso!</h2>
+                <h2 class="text-center text-success pb-3 pt-2">Aluno excluido com sucesso!</h2>
 <%  
             }
-            if(resposta.equals("alterarTrue") || resposta == "alterarTrue")
-            {
-%>
-                <h2>Aluno alterado com sucesso!</h2>
-<%  
-            }
-                else
+            else{
+                if(resposta.equals("alterarTrue") || resposta == "alterarTrue")
                 {
+%>
+                    <h2 class="text-center text-success pb-3 pt-2">Aluno alterado com sucesso!</h2>
+<%  
+                }
+                else{
     %>
-                    <h2><%= resposta %></h2>
+                    <h2 class="text-center text-danger pb-3 pt-2"><%= resposta %></h2>
     <%       
                 }
+            }
+        }
         //request.removeAttribute("include");
         //RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
         //dispatcher.forward( request, response);
@@ -291,6 +293,95 @@
         </div>
       </div>
     
+<!---------------------------------MODAL-CONSULTAR-RA--------------------------------->
+      
+      <div class="modal fade" id="modal-consulta-ra" tabindex="-1" role="dialog"> <!-- fade = animação -->
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    
+                    <h3 class="modal-title">Consultar Aluno</h3>
+                    
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span><!-- $time; = x -->
+                    </button>
+                    
+                </div>
+                
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        <form action="consultaRA.jsp">
+
+                            <div class="form-row">  
+
+                                <div class="form-group col-sm-12">
+
+                                    <label for="inputRa">RA:</label>
+                                    <input type="text" name="ra" class="form-control" id="inputRA" placeholder="RA">
+
+                                </div>
+                            
+                            </div>
+                            
+                            
+                            <div class="modal-footer">
+                                <input type="submit" name="submit" class="btn btn-danger btn-block" value="Consultar">
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+<!---------------------------------MODAL-CONSULTAR-NOME--------------------------------->
+      
+      <div class="modal fade" id="modal-consulta-nome" tabindex="-1" role="dialog"> <!-- fade = animação -->
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+            
+                <div class="modal-header">
+                    
+                    <h3 class="modal-title">Consultar Aluno</h3>
+                    
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span><!-- $time; = x -->
+                    </button>
+                    
+                </div>
+                
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        
+                        <form action="consultaNome.jsp">
+
+                            <div class="form-row">  
+
+                                <div class="form-group col-sm-12">
+
+                                    <label for="inputNome">Nome:</label>
+                                    <input type="text" name="nome" class="form-control" id="inputNome" placeholder="Nome">
+
+                                </div>
+                            
+                            </div>
+                            
+                            
+                            <div class="modal-footer">
+                                <input type="submit" name="submit" class="btn btn-danger btn-block" value="Consultar">
+                            </div>
+
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
     
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
