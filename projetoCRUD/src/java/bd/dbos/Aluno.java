@@ -73,8 +73,12 @@ public class Aluno implements Cloneable
     public String toJson()
     {
         String ret="";
-        
-        ret = "{ " + '"' + "Ra";
+
+        ret = "{\r\n" +
+        	     "\t\"ra\" : \"" + this.ra    + "\",\r\n" +
+        	   "\t\"nome\" : \"" + this.nome  + "\",\r\n" +
+        	  "\t\"email\" : \"" + this.email + "\"\r\n"  +
+        	  "}"; 
         
         return ret;
     }

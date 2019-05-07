@@ -16,7 +16,9 @@
 </head>
 <body>
 <% try{ 
-        Aluno aluno = Alunos.getAluno((String)request.getParameter("ra"));
+        Server server = new Server();
+        Aluno aluno = server.consultaIdAluno((String)request.getParameter("ra"));
+        //Aluno aluno = Alunos.getAluno((String)request.getParameter("ra"));
 %>
     <div class="row">
         <div class="col-12">

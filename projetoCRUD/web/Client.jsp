@@ -19,6 +19,45 @@
 </head>
 <body>
     
+<%
+    String resposta = null;
+    resposta = (String)request.getAttribute("ret");
+    if(resposta != null)
+    {
+        if(resposta.equals("incluirTrue") || resposta == "incluirTrue")
+        {
+%>
+            <h2 class="text-center text-success pb-3 pt-2">Aluno incluido com sucesso!</h2>
+<%  
+        }
+        else{
+            if(resposta.equals("excluirTrue") || resposta == "excluirTrue")
+            {
+%>
+                <h2 class="text-center text-success pb-3 pt-2">Aluno excluido com sucesso!</h2>
+<%  
+            }
+            else{
+                if(resposta.equals("alterarTrue") || resposta == "alterarTrue")
+                {
+%>
+                    <h2 class="text-center text-success pb-3 pt-2">Aluno alterado com sucesso!</h2>
+<%  
+                }
+                else{
+    %>
+                    <h2 class="text-center text-danger pb-3 pt-2"><%= resposta %></h2>
+    <%       
+                }
+            }
+        }
+        //request.removeAttribute("include");
+        //RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
+        //dispatcher.forward( request, response);
+    }
+            
+%>
+    
     <div class="row">
         <div class="col-12">
             <table class="table" style="max-height: 100px; height: 100px; overflow-y:scroll;">
@@ -87,44 +126,7 @@
         </div>
     </div>
          
-<%
-    String resposta = null;
-    resposta = (String)request.getAttribute("ret");
-    if(resposta != null)
-    {
-        if(resposta.equals("incluirTrue") || resposta == "incluirTrue")
-        {
-%>
-            <h2 class="text-center text-success pb-3 pt-2">Aluno incluido com sucesso!</h2>
-<%  
-        }
-        else{
-            if(resposta.equals("excluirTrue") || resposta == "excluirTrue")
-            {
-%>
-                <h2 class="text-center text-success pb-3 pt-2">Aluno excluido com sucesso!</h2>
-<%  
-            }
-            else{
-                if(resposta.equals("alterarTrue") || resposta == "alterarTrue")
-                {
-%>
-                    <h2 class="text-center text-success pb-3 pt-2">Aluno alterado com sucesso!</h2>
-<%  
-                }
-                else{
-    %>
-                    <h2 class="text-center text-danger pb-3 pt-2"><%= resposta %></h2>
-    <%       
-                }
-            }
-        }
-        //request.removeAttribute("include");
-        //RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
-        //dispatcher.forward( request, response);
-    }
-            
-%>
+
     
 <!---------------------------------MODAL-INSERIR--------------------------------->
       

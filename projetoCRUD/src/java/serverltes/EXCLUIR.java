@@ -15,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import br.unicamp.Server.*;
 
 /**
  *
@@ -65,8 +66,10 @@ public class EXCLUIR extends HttpServlet {
         try{
             String ra = (String)request.getParameter("ra");
             
-
-            Alunos.excluir(ra);
+            Server server = new Server();
+            
+            //Alunos.excluir(ra);
+            server.excluiAluno(ra);
 
             request.setAttribute("ret", "excluirTrue");
             RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");

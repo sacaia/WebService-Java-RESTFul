@@ -15,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import br.unicamp.Server.*;
 
 /**
  *
@@ -69,7 +70,9 @@ public class INCLUIR extends HttpServlet {
 
             Aluno aluno = new Aluno(ra, nome, email);
 
-            Alunos.incluir(aluno);
+            Server server = new Server();
+            server.inlcuiAluno(aluno);
+            //Alunos.incluir(aluno);
 
             request.setAttribute("ret", "incluirTrue");
             RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");

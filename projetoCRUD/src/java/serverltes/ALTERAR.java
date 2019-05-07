@@ -15,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import br.unicamp.Server.*;
 
 /**
  *
@@ -68,8 +69,10 @@ public class ALTERAR extends HttpServlet {
 
 
             Aluno aluno = new Aluno(ra, nome, email);
+            Server server = new Server();
 
-            Alunos.alterar(aluno);
+            server.alteraAluno(aluno);
+            //Alunos.alterar(aluno);
 
             request.setAttribute("ret", "alterarTrue");
             RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
