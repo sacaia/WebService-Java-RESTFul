@@ -7,12 +7,13 @@ package br.unicamp.Server;
 
 import bd.dbos.Aluno;
 import bd.daos.Alunos;
+import java.util.ArrayList;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 import javax.ws.rs.Produces;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
-import static javax.ws.rs.HttpMethod.POST;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PUT;
@@ -60,7 +61,7 @@ public class Server {
     @Path("/excluiAluno/{ra}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String excluiAluno(@PathParam("ra")String ra){
+    public String excluiAluno(@PathParam("ra")String ra) throws Exception{
         try
         {
             Alunos.excluir(ra);
@@ -68,7 +69,7 @@ public class Server {
         }
         catch(Exception e)
         {
-           return "Nao foi possivel excluir o aluno";
+           throw new Exception(e.getMessage());
         }
     }
     
@@ -76,7 +77,7 @@ public class Server {
     @Path("/consulta/{ra}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Aluno consultaIdAluno(@PathParam("ra")String ra){
+    public Aluno consultaIdAluno(@PathParam("ra")String ra) throws Exception{
         
         Aluno aluno = null;
         
@@ -86,7 +87,7 @@ public class Server {
         }
         catch(Exception e)
         {
-           e.printStackTrace();
+           throw new Exception(e.getMessage());
         }
          
         return aluno;
@@ -96,7 +97,7 @@ public class Server {
     @Path("incluir")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String inlcuiAluno(Aluno aluno){
+    public String inlcuiAluno(Aluno aluno) throws Exception{
         try
         {
             Alunos.incluir(aluno);
@@ -104,7 +105,7 @@ public class Server {
         }
         catch(Exception e)
         {
-           return "Nao foi possivel inlcuir o aluno";
+           throw new Exception(e.getMessage());
         }
     }
    
@@ -112,7 +113,7 @@ public class Server {
     @Path("alterar")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public String alteraAluno(Aluno aluno){
+    public String alteraAluno(Aluno aluno) throws Exception{
         try
         {
             Alunos.alterar(aluno);
@@ -120,7 +121,7 @@ public class Server {
         }
         catch(Exception e)
         {
-           return "Nao foi possivel alterar o aluno";
+           throw new Exception(e.getMessage());
         }
     }
 

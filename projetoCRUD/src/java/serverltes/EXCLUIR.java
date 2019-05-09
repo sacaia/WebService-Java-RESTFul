@@ -77,9 +77,8 @@ public class EXCLUIR extends HttpServlet {
             //(request, response);
         }
         catch(Exception e) {
-            String erro = e.getMessage();
             //e.printStackTrace();
-            request.setAttribute("ret", erro);
+            request.setAttribute("ret", e.getMessage());
             RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
             dispatcher.forward( request, response);
             //processRequest(request, response);

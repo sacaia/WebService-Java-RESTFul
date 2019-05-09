@@ -12,7 +12,7 @@ public class Alunos
     public static boolean cadastrado (int novoRa) throws Exception
     {
         if (novoRa > 99999 || novoRa < 10000)
-            throw new Exception ("RA invalido");
+            throw new Exception ("RA inválido");
 
         String ra2 = "" + novoRa;
 
@@ -70,10 +70,10 @@ public class Alunos
     public static void incluir (Aluno aluno) throws Exception
     {
         if (aluno==null)
-            throw new Exception ("Aluno nao fornecido");
+            throw new Exception ("Aluno não fornecido");
         
         if (cadastrado(aluno.getRa()))
-            throw new Exception ("Aluno ja cadastrado");
+            throw new Exception ("Aluno já cadastrado");
 
         try
         {
@@ -103,7 +103,7 @@ public class Alunos
     public static void excluir (int novoRa) throws Exception
     {
         if (novoRa > 99999 || novoRa < 10000)
-            throw new Exception ("RA invalido");
+            throw new Exception ("RA inválido");
 
         String ra2 = "" + novoRa;
 
@@ -113,7 +113,7 @@ public class Alunos
     public static void excluir (String ra) throws Exception
     {
         if (!cadastrado (ra))
-            throw new Exception ("Nao cadastrado");
+            throw new Exception ("Aluno não cadastrado");
 
         try
         {
@@ -137,10 +137,10 @@ public class Alunos
     public static void alterar (Aluno aluno) throws Exception
     {
         if (aluno==null)
-            throw new Exception ("Aluno nao fornecido");
+            throw new Exception ("Aluno não fornecido");
 
         if (!cadastrado (aluno.getRa()))
-            throw new Exception ("Nao cadastrado");
+            throw new Exception ("Aluno não cadastrado");
 
         try
         {
@@ -169,7 +169,7 @@ public class Alunos
     public static Aluno getAluno (int novoRA) throws Exception
     {
         if (novoRA > 99999 || novoRA < 10000)
-            throw new Exception ("RA invalido");
+            throw new Exception ("RA inválido");
 
         String ra2 = "" + novoRA;
 
@@ -195,7 +195,7 @@ public class Alunos
             MeuResultSet resultado = (MeuResultSet)BDSQLServer.COMANDO.executeQuery ();
 
             if (!resultado.first())
-                throw new Exception ("Nao cadastrado");
+                throw new Exception ("Aluno não cadastrado");
 
             aluno = new Aluno (resultado.getString("RA"),
                                resultado.getString("NOME"),
@@ -292,7 +292,7 @@ public class Alunos
             MeuResultSet resultado = (MeuResultSet)BDSQLServer.COMANDO.executeQuery ();
 
             if (!resultado.first())
-                throw new Exception ("Nao existem alunos cadastrados com esse nome");
+                throw new Exception ("Não existem alunos cadastrados com esse nome");
             
             ArrayList<Aluno> lista = new ArrayList<Aluno>();
             int i=0;
