@@ -4,6 +4,10 @@
     Author     : u17189
 --%>
 
+<%@page import="java.io.InputStreamReader"%>
+<%@page import="java.io.BufferedReader"%>
+<%@page import="java.net.HttpURLConnection"%>
+<%@page import="java.net.URL"%>
 <%@page pageEncoding="UTF-8" language="java" contentType="text/html; charset=ISO-8859-1"
     import="bd.dbos.*, bd.daos.*, br.unicamp.Server.*"%>
 <!DOCTYPE html>
@@ -16,6 +20,26 @@
 </head>
 <body>
 <% try{ 
+        URL objURL = new URL("http://localhost:8080/projetoCRUD/webresources/generic/consulta/" + (String)request.getParameter("ra"));
+        HttpURLConnection con = (HttpURLConnection)objURL.openConnection();
+
+        con.setDoOutput(true);
+
+        con.setRequestMethod("GET");
+        con.setRequestProperty("Content-Type", "application/json");
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream())); 
+        StringBuffer response1 = new StringBuffer();        
+        String inputLine;
+
+        while((inputLine = br.readLine())!=null){
+            response1.append(inputLine);
+
+        }
+     
+        br.close();
+        con.disconnect();
+        
         Server server = new Server();
         Aluno aluno = server.consultaIdAluno((String)request.getParameter("ra"));
         //Aluno aluno = Alunos.getAluno((String)request.getParameter("ra"));

@@ -16,6 +16,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import br.unicamp.Server.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 /**
  *
@@ -66,10 +71,30 @@ public class EXCLUIR extends HttpServlet {
         try{
             String ra = (String)request.getParameter("ra");
             
-            Server server = new Server();
+            URL objURL = new URL("http://localhost:8080/projetoCRUD/webresources/generic/excluiAluno/" + ra);
+            HttpURLConnection con = (HttpURLConnection)objURL.openConnection();
+
+            con.setDoOutput(true);
+
+            con.setRequestMethod("GET");
+            con.setRequestProperty("Content-Type", "application/json");
+            
+            BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream())); 
+            StringBuffer response1 = new StringBuffer();        
+            String inputLine;
+        
+            while((inputLine = br.readLine())!=null){
+                response1.append(inputLine);
+        
+            }
+            
+            br.close();
+            con.disconnect();
+            
+            //Server server = new Server();
             
             //Alunos.excluir(ra);
-            server.excluiAluno(ra);
+            //server.excluiAluno(ra);
 
             request.setAttribute("ret", "excluirTrue");
             RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
@@ -78,7 +103,7 @@ public class EXCLUIR extends HttpServlet {
         }
         catch(Exception e) {
             //e.printStackTrace();
-            request.setAttribute("ret", e.getMessage());
+            request.setAttribute("ret", "Erro ao excluir");
             RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
             dispatcher.forward( request, response);
             //processRequest(request, response);

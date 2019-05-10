@@ -16,6 +16,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import br.unicamp.Server.*;
+//import com.google.gson.Gson;
+//import com.google.gson.JsonArray;
+//import com.google.gson.JsonObject;
+//import com.google.gson.reflect.TypeToken;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  *
@@ -67,11 +78,35 @@ public class INCLUIR extends HttpServlet {
             String nome = (String)request.getParameter("nome");
             String email = (String)request.getParameter("email");
 
-
             Aluno aluno = new Aluno(ra, nome, email);
+            
+            URL objURL = new URL("http://localhost:8080/projetoCRUD/webresources/generic/incluir");
+            HttpURLConnection con = (HttpURLConnection)objURL.openConnection();
 
-            Server server = new Server();
-            server.inlcuiAluno(aluno);
+            con.setDoOutput(true);
+
+            con.setRequestMethod("POST");
+            con.setRequestProperty("Content-Type", "application/json");
+            
+            OutputStream os = con.getOutputStream();
+            
+            String output = aluno.toJson();
+            os.write(output.getBytes());
+            
+            BufferedReader br = new BufferedReader(new InputStreamReader(con.getInputStream())); 
+            StringBuffer response1 = new StringBuffer();        
+            String inputLine;
+        
+            while((inputLine = br.readLine())!=null){
+                response1.append(inputLine);
+        
+            }
+            
+            br.close();
+            con.disconnect();
+
+            //Server server = new Server();
+            //server.inlcuiAluno(aluno);
             //Alunos.incluir(aluno);
 
             request.setAttribute("ret", "incluirTrue");
@@ -82,7 +117,7 @@ public class INCLUIR extends HttpServlet {
         catch(Exception e) {
             String erro = e.getMessage();
             //e.printStackTrace();
-            request.setAttribute("ret", erro);
+            request.setAttribute("ret", "Erro ao inserir aluno");
             RequestDispatcher dispatcher = request.getRequestDispatcher("Client.jsp");
             dispatcher.forward( request, response);
             //processRequest(request, response);
