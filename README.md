@@ -1,2 +1,2 @@
 # WebService-Java-RESTFul
-Projeto
+CRUD using Java RESTFul Web Service :globe_with_meridians:
